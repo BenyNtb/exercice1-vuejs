@@ -4,15 +4,18 @@
       <card id="card">
         <div class="wrapper">
           <img alt="drawers" id="drawers" src="./assets/drawers.jpg">
-          <h2 id="title">{{title}}</h2>
-          <p id="para1">{{para1}}</p>
+          <Test titre="Shift the overall look and feel by adding these wonderful touches to furniture in your home"/>
+          <Test para1="Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple tips to help you make any room feel complete."/>
           <div class="author">
             <img src="./assets/avatar-michelle.jpg" alt="avatar-michelle">
             <div class="infos">
-              <p id="nom">{{nom}}</p>
-              <p id="date">{{date}}</p>
+            <Test nom="Michelle Appleton"/>
+            <Test date="28 Jun 2020"/>
+            <Test fb="./assets/facebook-square-brands.svg"/>
+            <Test twitter="./assets/twitter-square-brands.svg"/>
+            <Test facebook="./assets/pintrest-brands.svg"/>  
+
             </div>
-            
             <div id="app">
               <!-- <p v-show="isNinja">Invisible like a ninja!</p> -->
               <div>
@@ -34,14 +37,17 @@
 </template>
 
 <script>
+  import Test from './components/Test.vue'
   export default {
     name: 'App',
+    components:{
+      Test
+    },
     data() {
       return {
-        title: "Shift the overall look and feel by adding these wonderful touches to furniture in your home",
-        para1: "Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple tips to help you make any room feel complete.",
-        nom: "Michelle Appleton",
-        date: "28 Jun 2020",
+        // para1: "Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple tips to help you make any room feel complete.",
+        // nom: "Michelle Appleton",
+        // date: "28 Jun 2020",
         isNinja: true
       }
 
